@@ -5,6 +5,15 @@
   display: block;
 }
 
+.card__title{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 .card__content {
   display: flex;
   justify-content: space-between;
@@ -17,6 +26,7 @@
   height: 20px;
   border: none;
   opacity: 40%;
+  cursor:pointer;
 }
 
 .card__like-btn:hover {
