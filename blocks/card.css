@@ -27,6 +27,7 @@
   border: none;
   opacity: 40%;
   cursor:pointer;
+  background-color: transparent;
 }
 
 .card__like-btn:hover {

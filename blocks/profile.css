@@ -109,5 +109,7 @@ padding: 0;
   .profile__add-btn {
     margin: 0;
     width: 100%;
+   
+  height:auto;
   }
 }
