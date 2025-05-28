@@ -1,0 +1,91 @@
+.modal{
+visibility: hidden;
+background-color:#00000080;
+position:fixed;
+top:0;
+left:0;
+right:0;
+bottom:0;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:10px;
+}
+
+.modal_is-opened{
+visibility: visible;
+}
+
+.modal__container{
+    max-width: 730px;
+    width: 100%;
+    border-radius: 8px;
+    background-color:#fff;
+padding:32px 50px;
+position: relative;
+}
+
+.modal__close-btn{
+position: absolute;
+height: 40px;
+width: 40px;
+top:32px;
+right:50px;
+border:none;
+background-color:#fff;
+}
+
+.modal__title{
+margin:0 0 32px;
+font-family: Poppins;
+font-weight: 500;
+font-size: 32px;
+
+}
+
+
+.modal__form{
+    
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.modal__label{
+margin:0 0 32px;
+font-family: Poppins;
+font-weight: 500;
+font-size: 16px;
+color:#212121B2;
+
+}
+
+.modal__input{
+display:block;
+margin:8px 0 0;
+width:100%;
+font-family: Poppins;
+font-weight: 500;
+font-size: 20px;
+line-height: 100%;
+color: #2121214D;
+border:1px solid #21212166;
+border-radius:8px;
+padding:12px;
+}
+
+
+.modal__input::placeholder{
+
+color:#21212166 ;
+}
+
+.modal__submit-btn{
+background-color:#212121;
+color: #FCF5E5;
+max-width:156px;
+height:52px;
+padding:18px 32px;
+border-radius: 8px;
+width: 100px;
+}
