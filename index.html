@@ -82,11 +82,11 @@
                 <p class="footer__author">Omier Thomas © 2025</p>
                
             </footer>
-            <div class="modal" id="new-post-modal">
+            <div class="modal" id="edit-profile-modal">
             <div class="modal__container">
             <button type="button" class="modal__close-btn">X</button>
             <h2 class="modal__title">Edit Profile</h2>
-            <form  class="modal__form">
+            <form  class="modal__form" id="edit-profile-modal__form">
             <label for="profile__name-input" class="modal__label" >Name
                 <input id="profile__name-input" 
                 type="text" 
@@ -103,7 +103,7 @@
         </form>
         </div>
     </div>
-    <div class="modal" id="edit-profile-modal">
+    <div class="modal" id="new-post-modal">
         <div class="modal__container">
         <button type="button" class="modal__close-btn">X</button>
         <h2 class="modal__title">New Post</h2>
@@ -120,7 +120,7 @@
             class="modal__input"
              placeholder="Type your caption" />
         </label>
-        <button type="submit" class="modal__submit-btn">Save</button>
+        <button type="button" class="modal__submit-btn">Save</button>
     </form>
     </div>
 </div>
