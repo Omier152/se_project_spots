@@ -33,20 +33,20 @@
   width: 23px;
   height: 20px;
   border: none;
-  opacity: 40%;
+  opacity: 0.4;
   cursor:pointer;
   background-color: transparent;
 }
 
 .card__like-btn:hover {
-  opacity: 100%;
+  opacity: 1;
 }
 
 .card__like-btn-active{
   background-image: url(../images/Union.svg);}
  
 .card__like-btn-active:hover{
-opacity:0.4;
+opacity:0.4%;
 }
 
 .card__delete-btn{
