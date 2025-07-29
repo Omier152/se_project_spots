@@ -19,9 +19,10 @@ link:"https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spo
 },
 {
   name:"Golden gate bridge",
-  link:"https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/7-photo-by-griffin-wooldridge-from-pexels.jpg"
+  link:" https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/7-photo-by-griffin-wooldridge-from-pexels.jpg"
 }
-];
+]
+
 const editProfileBtn = document.querySelector(".profile__edit-btn");
 const editProfileModal = document.querySelector("#edit-profile-modal");
 const editProfileCloseBtn = editProfileModal.querySelector(".modal__close");
@@ -49,7 +50,8 @@ function closeModal(modal) {
   modal.classList.remove("modal_is-opened");
 }
  
-const cardTemplate = document.querySelector("#card-template").content.querySelector(".card");
+const cardTemplate=document.querySelector("#card-template")
+.content.querySelector(".card");
 const cardList = document.querySelector(".cards__list");
 
 const previewModal =document.querySelector("#preview-modal");
@@ -112,17 +114,15 @@ function handleProfileFormElementSubmit(evt) {
 newPostFormElement.addEventListener("submit", function(evt) {
   evt.preventDefault();
   console.log("Image URL", newPostImageInput.value);
-  //   console.log("Image URL", newPostImageInput.value);
-  //   console.log("Caption",newPostCaptionInput.value);
-  const cardData = {
+  console.log("Caption",newPostCaptionInput.value);
+  const cardElement=getCardElement({
     name: newPostCaptionInput.value,
     link: newPostImageInput.value
-  }
-  const cardElement = getCardElement(cardData);
+  });
   cardList.prepend(cardElement);
   closeModal(newPostModal);
   evt.target.reset();
-};
+});
 
 profileFormElement.addEventListener('submit', handleProfileFormElementSubmit);
 
